@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_294217d407a30176640d1ed20f0ee455 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_294217d407a30176640d1ed20f0ee455" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_294217d407a30176640d1ed20f0ee455 = L.map(
+                "map_294217d407a30176640d1ed20f0ee455",
+                {
+                    center: [13.7367, 100.5331],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96d7a21167f93663ba21fcd4ac414aec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_96d7a21167f93663ba21fcd4ac414aec.addTo(map_294217d407a30176640d1ed20f0ee455);
+        
+    
+            var tile_layer_110c257e8b2c9ebb72403429ff88cce9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_110c257e8b2c9ebb72403429ff88cce9.addTo(map_294217d407a30176640d1ed20f0ee455);
+        
+    
+            var tile_layer_4856db2b5e335980a6961b47036f9034 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4856db2b5e335980a6961b47036f9034.addTo(map_294217d407a30176640d1ed20f0ee455);
+        
+    
+            var marker_1ae32a236be90f79af8b3b95bd3a7a62 = L.marker(
+                [13.7367, 100.5331],
+                {
+}
+            ).addTo(map_294217d407a30176640d1ed20f0ee455);
+        
+    
+            var icon_bde8503ede154d024172faf94092beeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ecb969eebed11c8431564b489ec9550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1760350bcda412616da5249d096bfa58 = $(`<div id="html_1760350bcda412616da5249d096bfa58" style="width: 100.0%; height: 100.0%;">จุฬาลงกรณ์มหาวิทยาลัย</div>`)[0];
+                popup_1ecb969eebed11c8431564b489ec9550.setContent(html_1760350bcda412616da5249d096bfa58);
+            
+        
+
+        marker_1ae32a236be90f79af8b3b95bd3a7a62.bindPopup(popup_1ecb969eebed11c8431564b489ec9550)
+        ;
+
+        
+    
+    
+            marker_1ae32a236be90f79af8b3b95bd3a7a62.bindTooltip(
+                `<div>
+                     ศาลาพระเกี้ยว
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ae32a236be90f79af8b3b95bd3a7a62.setIcon(icon_bde8503ede154d024172faf94092beeb);
+            
+    
+            var marker_955a9356309270482d4a6b20175da219 = L.marker(
+                [13.7445, 100.5325],
+                {
+}
+            ).addTo(map_294217d407a30176640d1ed20f0ee455);
+        
+    
+            var icon_84342b23b19eb657929ce967ba143d80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-bag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eaeb7af44831231a1fbf22fe03249aa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67fd40bd2e8a5fc5091aa29b5ce5cc57 = $(`<div id="html_67fd40bd2e8a5fc5091aa29b5ce5cc57" style="width: 100.0%; height: 100.0%;">สยามสแควร์</div>`)[0];
+                popup_eaeb7af44831231a1fbf22fe03249aa2.setContent(html_67fd40bd2e8a5fc5091aa29b5ce5cc57);
+            
+        
+
+        marker_955a9356309270482d4a6b20175da219.bindPopup(popup_eaeb7af44831231a1fbf22fe03249aa2)
+        ;
+
+        
+    
+    
+            marker_955a9356309270482d4a6b20175da219.bindTooltip(
+                `<div>
+                     Siam Square
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_955a9356309270482d4a6b20175da219.setIcon(icon_84342b23b19eb657929ce967ba143d80);
+            
+    
+            var layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers = {
+                base_layers : {
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e1b\u0e01\u0e15\u0e34 (OpenStreetMap)" : tile_layer_96d7a21167f93663ba21fcd4ac414aec,
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e2a\u0e35\u0e2a\u0e27\u0e48\u0e32\u0e07 (CartoDB)" : tile_layer_110c257e8b2c9ebb72403429ff88cce9,
+                    "\u0e41\u0e1c\u0e19\u0e17\u0e35\u0e48\u0e14\u0e32\u0e27\u0e40\u0e17\u0e35\u0e22\u0e21 (Esri Satellite)" : tile_layer_4856db2b5e335980a6961b47036f9034,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1118afabd25ebfcc79f38b6f5de6cdce = L.control.layers(
+                layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers.base_layers,
+                layer_control_1118afabd25ebfcc79f38b6f5de6cdce_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_294217d407a30176640d1ed20f0ee455);
+
+        
+</script>
+</html>
